@@ -1,0 +1,17 @@
+[MASTER]
+ignore = tests, venv, .git
+load-plugins = pylint_flask, pylint_pydantic
+
+[MESSAGES CONTROL]
+disable =
+    C0114,  # Missing module docstring
+    C0115,  # Missing class docstring
+    C0116,  # Missing function docstring
+    R0903,  # Too few public methods (для дата-классов)
+    W1203,  # f-string logging (разрешено в ML)
+
+[BASIC]
+good-names =
+    df, X, y,  # Разрешаем стандартные ML-имена
+    i, j, k,   # Счетчики в циклах
+    _          # Неиспользуемые переменные

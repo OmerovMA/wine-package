@@ -1,0 +1,14 @@
+version: '3.11'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/app.Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src  # Для hot-reload кода
+    environment:
+      - ENV=development
+    restart: unless-stopped

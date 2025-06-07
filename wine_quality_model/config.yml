@@ -1,0 +1,42 @@
+# Package Overview
+package_name: wine_quality_model
+pipeline_name: wine_quality_pipeline
+pipeline_save_file: wine_model_v
+
+# Data Files
+training_data_file: winequality-white.csv
+test_data_file: wine_quality_test.csv  # (опционально)
+
+# Variables
+target: quality  # Целевая переменная (регрессия)
+
+features:
+  - fixed_acidity
+  - volatile_acidity
+  - citric_acid
+  - residual_sugar
+  - chlorides
+  - free_sulfur_dioxide
+  - total_sulfur_dioxide
+  - density
+  - pH
+  - sulphates
+  - alcohol
+
+# Все признаки числовые
+numerical_vars:
+  - fixed_acidity
+  - volatile_acidity
+  - citric_acid
+  - residual_sugar
+  - chlorides
+  - free_sulfur_dioxide
+  - total_sulfur_dioxide
+  - density
+  - pH
+  - sulphates
+  - alcohol
+
+# Параметры модели
+test_size: 0.2
+random_state: 42
