@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# Models
+*.pkl
+
+# Environments
+.env
+
+# Docker
+*.env
